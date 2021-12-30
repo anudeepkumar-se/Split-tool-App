@@ -21,6 +21,9 @@ export class AppComponent {
   }
   generateReport(){
 
+    try{
+
+
     var mapofRowsWithSplitData = new Map();
     let splitArrayOfObject = [];
     const reader = new FileReader();
@@ -135,6 +138,13 @@ export class AppComponent {
 
 
   }
+
+
+}
+catch(e){
+  window.alert("there was a error in the file - Please correct the file data and re upload")
+}
+
 
   }
 
