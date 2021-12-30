@@ -41,6 +41,11 @@ export class AppComponent {
 
       let pluginoutput =Obj['Plugin Output'];
 
+
+
+        if(pluginoutput.split('\n')[1] == undefined){
+          window.alert("there was a error in the file - Please correct the file data and re upload")
+        }
         let secondline = pluginoutput.split('\n')[1].trim();
       if(secondline.startsWith('Nessus')){
 
